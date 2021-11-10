@@ -1,5 +1,8 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "cli": {
+      "analytics": "e628fbb6-2500-4203-ae6d-13352bdc7153"
+    },
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
@@ -146,7 +149,7 @@
             "prefix": "owl",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/picker/tsconfig.lib.json",
                         "project": "projects/picker/ng-package.json"

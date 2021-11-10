@@ -64,7 +64,7 @@ export class OwlDateTimeContainerComponent<T>
     // retain start and end time
     private retainStartTime: T;
     private retainEndTime: T;
-    
+
     /**
      * Stream emits when try to hide picker
      * */
@@ -229,7 +229,7 @@ export class OwlDateTimeContainerComponent<T>
     public handleContainerAnimationDone(event: AnimationEvent): void {
         const toState = event.toState;
         if (toState === 'enter') {
-            this.pickerOpened$.next();
+            this.pickerOpened$.next(this);
         }
     }
 
