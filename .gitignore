@@ -40,3 +40,4 @@ testem.log
 Thumbs.db
 /.vscode
 .angular
+projects/picker/coverage
