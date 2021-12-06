@@ -5,11 +5,11 @@ Angular Date Time Picker
 [![npm](https://img.shields.io/npm/dm/@danielmoncada/angular-datetime-picker.svg)](https://www.npmjs.com/package/@danielmoncada/angular-datetime-picker)
 
 **Angular date time picker - Angular reusable UI component**
-**This package supports Angular 9+ / Angular 10 / Angular 11 / Angular 12**
+**This package supports Angular 9+ / Angular 10 / Angular 11 / Angular 12 / Angular 13**
 
 Breaking Changes
 -------
- - The date/time picker has been updated to support Angular 9+, Angular 10, Angular 11, Angular 12 as well as compilation using Ivy.
+ - The date/time picker has been updated to support Angular 9+, Angular 10, Angular 11, Angular 12, Angular 13 as well as compilation using Ivy.
  - If you need Ng8 support, please stick with: https://github.com/DanielYKPan/date-time-picker
 
 Description
@@ -124,6 +124,9 @@ Events for `owl-date-time`
 |`afterPickerClosed`|null|Callback to invoke when the picker is closed.|
 |`yearSelected`|T|Callback to invoke when the year is selected.This doesn't imply a change on the selected date.|
 |`monthSelected`|T|Callback to invoke when the month is selected.This doesn't imply a change on the selected date.|
+|`dateClicked`|T|Callback when the selected data changes.|
+|`selectedChanged`|T|Callback when the currently selected data changes.|
+|`userSelection`|null|Callback when any date is selected.|
 
 Properties for `input[owlDateTime]`
 -------

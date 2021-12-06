@@ -17,10 +17,11 @@ import { OwlYearViewComponent } from './calendar-year-view.component';
 import { OwlMultiYearViewComponent } from './calendar-multi-year-view.component';
 import { OwlTimerBoxComponent } from './timer-box.component';
 import { OwlTimerComponent } from './timer.component';
+import { NumberFixedLenPipe } from './numberedFixLen.pipe';
 import { OwlCalendarComponent } from './calendar.component';
 import { OwlDateTimeInlineComponent } from './date-time-inline.component';
 import { OwlDialogModule } from '../dialog/dialog.module';
-import { NumberFixedLenPipe } from './numberedFixLen.pipe';
+import { optionsProviders } from './options-provider';
 
 @NgModule({
     imports: [CommonModule, OverlayModule, OwlDialogModule, A11yModule],
@@ -53,6 +54,7 @@ import { NumberFixedLenPipe } from './numberedFixLen.pipe';
     providers: [
         OwlDateTimeIntl,
         OWL_DTPICKER_SCROLL_STRATEGY_PROVIDER,
+        ...optionsProviders,
     ],
     entryComponents: [
         OwlDateTimeContainerComponent,
