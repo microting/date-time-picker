@@ -31,3 +31,9 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run test-with-coverage
+      - name: prepare for lib/package build
+        run: cd projects/picker && npm i
+      - name: Build lib
+        run: npm run build_lib
+      - name: Build package
+        run: npm run npm_pack
