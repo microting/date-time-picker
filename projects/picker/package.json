@@ -24,9 +24,9 @@
         "access": "public"
     },
     "peerDependencies": {
-        "@angular/common": "^12.2.14",
-        "@angular/core": "^12.2.14",
-        "@angular/cdk": "^12.2.13",
+        "@angular/common": "^13.0.3",
+        "@angular/core": "^13.0.3",
+        "@angular/cdk": "^13.0.3",
         "moment": "^2.29.1",
         "zone.js": "^0.11.4"
     },
